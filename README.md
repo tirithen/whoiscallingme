@@ -18,8 +18,8 @@ As there is currently no way of installing the application through Firefox Marke
 
 1. Make sure that you have Firefox 34+ installed on a computer
 2. Make sure that you have Node.js https://nodejs.org/ installed (for running npm)
-3. Setup the connection between the phone and the computer [https://developer.mozilla.org/en-US/docs/Tools/WebIDE#Setting_up_runtimes]
-4. Download the application [https://github.com/tirithen/whoiscallingme/archive/master.zip] (or clone the repository)
+3. Setup the connection between the phone and the computer https://developer.mozilla.org/en-US/docs/Tools/WebIDE#Setting_up_runtimes
+4. Download the application https://github.com/tirithen/whoiscallingme/archive/master.zip (or clone the repository)
 5. Extract the zip file
 6. Install dependencies by running "npm install" in the extracted directory
 7. Open the Firefox WebIDE (press Shift + F8 in Firefox)
@@ -37,7 +37,7 @@ I see this kind of functionality as essential for any smartphone and I would lik
 
 ### Reporting bugs/issues and making feature requests
 
-If you find something that is broken or if you are missing a feature, feel free to report this on the GitHub page at [https://github.com/tirithen/whoiscallingme/issues].
+If you find something that is broken or if you are missing a feature, feel free to report this on the GitHub page at https://github.com/tirithen/whoiscallingme/issues.
 
 If you have the skills and want to create new feature or fix a bug, please create a pull request to the repository.
 
