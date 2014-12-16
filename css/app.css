@@ -1,0 +1,57 @@
+html, body {
+  margin: 0;
+  background: #000;
+}
+
+body {
+  font-size: 1rem;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: inherit;
+}
+
+.view {
+  background: #fff;
+  transition: height 0.5s;
+  overflow: hidden;
+}
+
+.view h1 {
+  margin: 0;
+  background: #4e3487;
+  color: #fff;
+  padding: 0.5rem 1rem 0.8rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: background 0.5s;
+  box-content: border-box;
+  position: relative;
+}
+
+.view.has-img h1 {
+  padding-left: 4rem;
+}
+
+.view h1 img {
+  height: 1rem;
+  transform: scale(3);
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+}
+
+.view.active h1 {
+  background: #6828f4;
+}
+
+.view .content {
+  margin: 0;
+  padding: 0.5rem 1rem 0.8rem;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title data-l10n-id="app_title">Who's calling me?</title>
+    <meta name="description" content="This app helps you find out who has called you.">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="prefetch" type="application/l10n" href="data/locales.ini" />
+    <script type="text/javascript" src="js/libs/l10n.js" defer></script>
+    <script type="text/javascript" src="js/libs/rsvp.min.js" defer></script>
+    <script type="text/javascript" src="js/numberlookup/NumberLookupSource.js" defer></script>
+    <script type="text/javascript" src="js/numberlookup/HittaNumberLookupSource.js" defer></script>
+    <script type="text/javascript" src="js/numberlookup/ContactsNumberLookupSource.js" defer></script>
+    <script type="text/javascript" src="js/numberlookup/NumberLookupService.js" defer></script>
+    <script type="text/javascript" src="js/callLogs.js" defer></script>
+    <script type="text/javascript" src="js/app.js" defer></script>
+  </head>
+  <body>
+    <section id="welcome-view" class="active view has-img">
+      <h1><img src="img/icons/icon.svg"><span data-l10n-id="app_title">Who's calling me?</span></h1>
+      <div class="content">
+        <p data-l10n-id="app_description">This app helps you find out who has called you.</p>
+      </div>
+    </section>
+    <section id="number-search-view" class="view">
+      <h1 data-l10n-id="number_search_view_headline">Search for a number</h1>
+      <div class="content">
+          <p>
+          <label for="number-search-field" data-l10n-id="number_search_field">Type a number</label>
+          <input type="tel" id="number-search-field" style="padding: 0.2em; font-size: 1.5em; width: 96%;">
+        </p>
+        <div id="number-search-result">
+          <p><span data-l10n-id="number_search_result_headline">Results for number</span> <a href="" id="number-search-query"></a></p>
+          <ul><li><span></span><br><small></small></li></ul>
+        </div>
+        <p id="number-search-error"><span data-l10n-id="number_search_error">Unable to find any matches for the number</span> <a href="" id="number-search-error-query"></a></p>
+      </div>
+    </section>
+    <section id="call-logs-view" class="view">
+      <h1 data-l10n-id="call_logs_view_headline">Numbers that called me</h1>
+      <div class="content">
+        <ul></ul>
+      </div>
+    </section>
+  </body>
+</html>

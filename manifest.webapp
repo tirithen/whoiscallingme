@@ -1,0 +1,57 @@
+{
+  "version": "0.1.0",
+  "name": "Who's calling me?",
+  "description": "Find out who is calling you, even if the number are not in the contacts in your phone.",
+  "launch_path": "/index.html",
+  "icons": {
+    "16": "/img/icons/icon16x16.png",
+    "48": "/img/icons/icon48x48.png",
+    "60": "/img/icons/icon60x60.png",
+    "128": "/img/icons/icon128x128.png"
+  },
+  "developer": {
+    "name": "Fredrik Söderström",
+    "url": "https://github.com/tirithen"
+  },
+  "type": "certified",
+  "permissions": {
+    "systemXHR":{
+      "description": "Used to search for the number through external services."
+    },
+    "telephony": {
+      "description": "Used to detect incoming phone calls and their number."
+    },
+    "desktop-notification":{
+      "description": "Used to notify you about who is currently calling."
+    },
+    "contacts": {
+      "description": "Used to search for information about a number in your phones contacts.",
+      "access": "readonly"
+    }
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "locales": {
+    "sv": {
+      "name": "Vem ringer till mig?",
+      "description": "Se vem som ringer dig, även om numret inte finns i bland kontakterna på din telefon.",
+      "permissions": {
+        "systemXHR":{
+          "description": "Används för att söka efter nummer genom externa tjänster."
+        },
+        "telephony": {
+          "description": "Används för att känna av inkommande telefonsamtal samt deras nummer."
+        },
+        "desktop-notification":{
+          "description": "Används för att informera dig när det ringer om vem det är."
+        },
+        "contacts": {
+          "description": "Används för att söka i kontaktboken på din telefon om vem som ringer.",
+          "access": "readonly"
+        }
+      }
+    }
+  },
+  "default_locale": "en"
+}
