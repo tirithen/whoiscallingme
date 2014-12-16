@@ -140,7 +140,7 @@ window.addEventListener('DOMContentLoaded', function() {
           }).join(', ');
 
           navigator.mozNotification.createNotification(
-            'Who\'s calling me?',
+            translate('app_title'),
             message,
             window.location.href.replace('index.html', '') + '/img/icons/icon.svg'
           ).show();
