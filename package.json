@@ -1,6 +1,6 @@
 {
   "name": "whoscallingme",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Find out who is calling you, even if the number are not in the contacts in your phone.",
   "main": "index.html",
   "scripts": {
@@ -9,6 +9,7 @@
   "author": "Fredrik Söderström <tirithen@gmail.com>",
   "license": "Apache License 2.0",
   "dependencies": {
+    "jquery": "^2.1.1",
     "rsvp": "^3.0.14"
   }
 }

@@ -1,4 +1,12 @@
-/* global RSVP, NumberLookupService, ContactsNumberLookupSource, HittaSeNumberLookupSource, callLogs */
+/* global
+  RSVP,
+  NumberLookupService,
+  ContactsNumberLookupSource,
+  HittaSeNumberLookupSource,
+  VemRingdeSeNumberLookupSource,
+  callLogs,
+  unique
+*/
 
 window.Promise = RSVP.Promise;
 
@@ -19,15 +27,10 @@ window.addEventListener('DOMContentLoaded', function() {
   var numberLookupService = new NumberLookupService({
     sources: [
       ContactsNumberLookupSource,
-      HittaSeNumberLookupSource
+      HittaSeNumberLookupSource,
+      VemRingdeSeNumberLookupSource
     ]
   });
-
-  function unique(array) {
-    return array.sort().filter(function(value, index) {
-      return index === array.indexOf(value);
-    });
-  }
 
   function start() {
     var searchTimer;

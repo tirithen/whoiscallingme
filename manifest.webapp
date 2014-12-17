@@ -1,5 +1,5 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "Who's calling me?",
   "description": "Find out who is calling you, even if the number are not in the contacts in your phone.",
   "launch_path": "/index.html",
