@@ -16,6 +16,21 @@ p {
   font-size: inherit;
 }
 
+li {
+  margin: 1em 0;
+}
+
+input {
+  padding: 0.2em;
+  font-size: 1.5em;
+  width: 96%;
+}
+
+.list-unstyled {
+  list-style-type: none;
+  padding: 0;
+}
+
 .view {
   background: #fff;
   transition: height 0.5s;
@@ -54,4 +69,12 @@ p {
 .view .content {
   margin: 0;
   padding: 0.5rem 1rem 0.8rem;
+}
+
+.right {
+  float: right;
+}
+
+.divider-heading {
+  border-bottom: 1px solid #000;
 }

@@ -28,11 +28,16 @@
       <div class="content">
           <p>
           <label for="number-search-field" data-l10n-id="number_search_field">Type a number</label>
-          <input type="tel" id="number-search-field" style="padding: 0.2em; font-size: 1.5em; width: 96%;">
+          <input type="tel" id="number-search-field">
         </p>
         <div id="number-search-result">
           <p><span data-l10n-id="number_search_result_headline">Results for number</span> <a href="" id="number-search-query"></a></p>
-          <ul><li><span></span><br><small></small></li></ul>
+          <ul class="list-unstyled">
+            <li>
+              <span class="info"></span><br>
+              <small class="source"></small>
+            </li>
+          </ul>
         </div>
         <p id="number-search-error"><span data-l10n-id="number_search_error">Unable to find any matches for the number</span> <a href="" id="number-search-error-query"></a></p>
       </div>
@@ -40,7 +45,12 @@
     <section id="call-logs-view" class="view">
       <h1 data-l10n-id="call_logs_view_headline">Numbers that called me</h1>
       <div class="content">
-        <ul></ul>
+        <ul class="list-unstyled">
+          <li>
+            <span class="info"></span><br>
+            <span class="number"></span> <span class="count"></span> <span class="time right"></span>
+          </li>
+        </ul>
       </div>
     </section>
   </body>

@@ -1,21 +1,49 @@
 'use strict';
 
-var callLogs = {
-  logs: (function () {
-    var logs = localStorage.getItem('logs');
+var callLogs = {};
 
-    if (logs) {
-      return JSON.parse(logs);
-    } else {
-      return [];
+callLogs.sort = function (logs) {
+  (logs || callLogs.logs).sort(function (logA, logB) {
+    if (logA.date.getTime() < logB.date.getTime()) {
+      return -1;
+    } else if (logA.date.getTime() > logB.date.getTime()) {
+      return 1;
     }
-  }()),
-  log: function (number) {
-    callLogs.logs.push({
-      number: number,
-      date: new Date()
+
+    return 0;
+  });
+
+  return logs;
+};
+
+callLogs.logs = (function () {
+  var logs = localStorage.getItem('logs');
+
+  if (logs) {
+    logs = JSON.parse(logs);
+
+    logs = logs.map(function (log) {
+      return {
+        number: log.number,
+        date: new Date(log.date)
+      };
     });
 
-    localStorage.setItem('logs', JSON.stringify(callLogs.logs));
+    logs = callLogs.sort(logs);
+
+    return logs;
+  } else {
+    return [];
   }
+}());
+
+callLogs.log = function (number) {
+  callLogs.logs.push({
+    number: number,
+    date: new Date()
+  });
+
+  callLogs.sort();
+
+  localStorage.setItem('logs', JSON.stringify(callLogs.logs));
 };
