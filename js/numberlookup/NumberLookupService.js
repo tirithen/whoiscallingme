@@ -15,7 +15,10 @@ NumberLookupService.prototype.lookup = function (number) {
     });
 
     Promise.all(promises).then(function (results) {
-      results = results.filter(function (result) { return !!result; });
+      results = results.filter(function (result) {
+        return !!result || (Array.isArray(result) && result.length === 0);
+      });
+
       resolve(results);
     });
   });
